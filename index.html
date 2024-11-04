@@ -15,10 +15,25 @@
         <section>
             <h2>關於我</h2>
             <p>歡迎來到我的個人頁面！這裡是我的專業簡介與專案分享平台。</p>
+            <!-- 新增按鈕 -->
+            <button id="openLink">前往 Google 台灣網站</button>
         </section>
     </main>
     <footer>
         <p>&copy; 2024 Sean Wu. All rights reserved.</p>
     </footer>
+
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- 自定義 jQuery 功能 -->
+    <script>
+        $(document).ready(function() {
+            // 當按鈕被點擊時，開啟 Google 網址
+            $('#openLink').click(function() {
+                window.open("https://www.google.com.tw/?hl=zh_TW", "_blank");
+            });
+        });
+    </script>
 </body>
 </html>
